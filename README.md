@@ -444,6 +444,29 @@ guarantee that your application continues to function properly in the future.
     *Sample request*:
     ```json
     {
+        "action": "getDeckCards",
+        "version": 6,
+        "params": {
+            "deck": "Default"
+        }
+    }
+    ```
+
+    *Sample result*:
+    ```json
+    {
+      "result": [1502098034048, 1502298033753],
+      "error": null
+    }
+    ```
+
+*   **getDeckConfig**
+
+    Gets the configuration group object for the given deck.
+
+    *Sample request*:
+    ```json
+    {
         "action": "getDeckConfig",
         "version": 6,
         "params": {
