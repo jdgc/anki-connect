@@ -437,9 +437,9 @@ guarantee that your application continues to function properly in the future.
     }
     ```
 
-*   **getDeckConfig**
+*   **getDeckCards**
 
-    Gets the configuration group object for the given deck.
+    Gets the complete list of card IDs for a given deck.
 
     *Sample request*:
     ```json
