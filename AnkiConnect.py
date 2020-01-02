@@ -610,6 +610,15 @@ class AnkiConnect:
 
 
     @api()
+    def getDeckCards(self, deck):
+        if not deck in self.deckNames():
+            return False
+        
+        collection = self.collection()
+        did = collection.decks.id(deck)
+        return self.database().list("select id from cards where did = ?", did)
+
+    @api()
     def getDeckConfig(self, deck):
         if not deck in self.deckNames():
             return False
